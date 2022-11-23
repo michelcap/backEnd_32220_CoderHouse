@@ -3,7 +3,7 @@ class ProductManager {
     constructor() {
         this.products = [];
     }
-
+    /////////////////////////////////////////////////////////
     // largo de lista products
     #getLength() {
         return this.products.length;
