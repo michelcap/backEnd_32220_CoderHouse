@@ -50,7 +50,7 @@ class ProductManager {
     }
 
     getProductById(id) {
-        let retorno = "Producto no encontrado"
+        let retorno = "Not found"
         let product = this.products.find((prod) => prod.id === id)
         if (typeof product != 'undefined') retorno = product
         return retorno
