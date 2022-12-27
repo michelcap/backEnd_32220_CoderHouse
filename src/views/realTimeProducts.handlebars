@@ -1,22 +1,7 @@
 <div class='container-xl text-center text-break'>
 	<h2 class='h2'>Home</h2>
-	<div class='row justify-content-evenly listProducts'>
-		{{#each listProducts}}
-			<article class='card text-center text-wrap w-25 m-4 p-0 shadow-lg p-3 mb-5 bg-white rounded'>
-            <heder class='card-header'>
-                <h4 class='h6'>{{id}}</h4>
-            </heder>
-            <picture>
-                <img class="img-fluid img-thumbnail" src={{thumbnail}} alt={{title}} />
-            </picture>
-            <section class="card-body">
-                <p class="card-text fs-6 fw-bolder">Precio: {{price}} usd</p>
-                {{!-- <Link to={`/detail/${products.id}`} class="btn btn-light">Ver detalle del producto</Link> --}}
-                <p class="card-text fs-6">Stock disponible: {{stock}}</p>
-            </section>
-        </article>
-		{{/each}}
-	</div>
+	<div class='row justify-content-evenly' id='listProducts'></div>
 </div>
-<script src="/socket.io/socket.io.js"></script>
-<script src="/js/socket.js"></script>
+
+<script src='/socket.io/socket.io.js'></script>
+<script src='/js/socket.js'></script>

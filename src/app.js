@@ -25,7 +25,7 @@ const server = app.listen(PORT, () =>
 server.on("error", (err) => console.log(err));
 
 const socketServer = new Server(server);
-const messages = [];
+
 socketServer.on('connection', (socket) => {
   console.log("Cliente Conectado");
   socket.on("disconnect", () => {
