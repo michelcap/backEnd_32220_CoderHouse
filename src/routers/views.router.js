@@ -1,5 +1,4 @@
 import { Router } from "express";
-import { products } from "../routers/products.router.js";
 
 const router = Router();
 
@@ -9,7 +8,10 @@ router.get("/", (req, res) => {
 });
 
 router.get("/realtimeproducts", (req, res) => {
-  res.render("realTimeProducts")
-})
+  res.render("realTimeProducts");
+});
 
 export default router;
+
+
+
