@@ -2,7 +2,7 @@ import { ProductModel } from "../models/products.model.js";
 
 export async function getProducts() {
   try {
-    const products = await ProductModel.find({ deletedAt: { $exists: false } });
+    const products = await ProductModel.find({ deletedAt: { $exists: false } }).lean();
     return products;
   } catch (error) {
     throw new Error(error.message);
@@ -11,7 +11,7 @@ export async function getProducts() {
 
 export async function getProduct(pid) {
   try {
-    const product = await ProductModel.find({pid : Number(pid)});
+    const product = await ProductModel.find({pid : Number(pid)}).lean();
     return product;
   } catch (error) {
     throw new Error(error.message);

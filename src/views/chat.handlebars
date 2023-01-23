@@ -1,0 +1,18 @@
+<div class='container-xl text-center text-break'>
+	<h2>Chat del MarketPlace</h2>
+	<div class='row justify-content-evenly' id='listChats'></div>
+	<div class='row justify-content-evenly'>
+		<div><p id='name'>User: </p></div>
+		<div>
+			<input id='message' type='text' />
+			<button id='submit'>Enviar</button>
+		</div>
+		<div>
+			<p id='messages'>Message: </p>
+		</div>
+	</div>
+	<script src='//cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+</div>
+
+<script src='/socket.io/socket.io.js'></script>
+<script src='/js/socket.js'></script>
